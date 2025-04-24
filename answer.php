@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Fahrenheit to celsius calculato " />
+  <meta name="description" content=" Watch a movie age calculator" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Emre Guzel" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -37,15 +37,20 @@
         <?php
 
         // Setting the varibles
-        $fahrenheitValue = $_GET["fahrenheit"];
-        $celsiusInput = $_GET["celsius"];
+        $age = $_GET["age"];
+        echo "If age is" . " " . ($age) . " ";
+        "<br>";
+        "<br>";
         // Calculatoin 
-        $celsiusValue = ($fahrenheitValue - 32) * 5 / 9;
-        $celsiusInput = round($celsiusValue, 3);
-        "<br>";
-        "<br>";
-        echo "If fahrenheit is: " . $fahrenheitValue . "<br>";
-        echo "Celsius is: " . $celsiusInput;
+        if ($age >= 17) {
+          echo ("You can watch R-rated movie alone");
+        } elseif ($age >= 13) {
+          echo ("You can watch PG-13 movie alone");
+        } elseif ($age >= 5) {
+          echo ("You can watch G or PG movie alone.");
+        } else {
+          echo (" Uh, you're too young for most things.");
+        }
         ?>
         <br /> <br>
         <div class="page-content-answer">

@@ -32,9 +32,9 @@
       </header>
       <form action="answer.php" method="GET">
         <div class="mdl-textfield mdl-js-textfield" id="base-a">
-          <p class="age">Enter your age  </p>
-          <input type="number" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" name="fahrenheit">
-          <label class="mdl-textfield__label" for="base-a-of-trapizoid"></label>
+          <p class="age">Enter your age </p>
+          <input type="number" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" name="age">
+          <label class="mdl-textfield__label" for="age"></label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br>
