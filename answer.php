@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Watch a movie age calculator " />
+  <meta name="description" content="Fahrenheit to celsius calculato " />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Emre Guzel" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -18,37 +18,46 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>Watch a movie</title>
+  <title>Fahrenheit to celsius calculato </title>
 </head>
 
 <body>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <div class="container">
+  <div class="container-2">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Fahrenheit to celsius calculator </span>
+          <span class="mdl-layout-title">Fahrenheit to celsius calculato</span>
         </div>
       </header>
-      <form action="answer.php" method="GET">
-        <div class="mdl-textfield mdl-js-textfield" id="base-a">
-          <p class="age">Enter your age  </p>
-          <input type="number" class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" name="fahrenheit">
-          <label class="mdl-textfield__label" for="base-a-of-trapizoid"></label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
+      <main class="mdl-layout__content">
+        <div class="right-image">
+        </div>
+        <br><br>
+        <?php
+
+        // Setting the varibles
+        $fahrenheitValue = $_GET["fahrenheit"];
+        $celsiusInput = $_GET["celsius"];
+        // Calculatoin 
+        $celsiusValue = ($fahrenheitValue - 32) * 5 / 9;
+        $celsiusInput = round($celsiusValue, 3);
+        "<br>";
+        "<br>";
+        echo "If fahrenheit is: " . $fahrenheitValue . "<br>";
+        echo "Celsius is: " . $celsiusInput;
+        ?>
+        <br /> <br>
+        <div class="page-content-answer">
+          <a href="./index.php">Return ...</a>
         </div>
         <br>
-        <main id="click-me " class="mdl-layout__content">
-          <button id="click" type="submit" name="celsius"
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Find the movie type
-          </button>
-        </main>
-      </form>
+        <div class="tempurature">
+          <img src="images/temperature.png" alt="tempurature">
+        </div>
+      </main>
     </div>
-    <br>
-    <img class="Calculate" src="images/" alt="Tempurature">
-  </div>
+
 </body>
 
 </html>
