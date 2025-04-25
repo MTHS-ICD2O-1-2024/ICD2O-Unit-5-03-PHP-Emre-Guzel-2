@@ -47,7 +47,7 @@
       </form>
     </div>
     <br>
-    <img class="Calculate" src="images/" alt="Tempurature">
+    <img class="Calculate" src="images/movie_ratings.jpg" alt="Movie ">
   </div>
 </body>
 

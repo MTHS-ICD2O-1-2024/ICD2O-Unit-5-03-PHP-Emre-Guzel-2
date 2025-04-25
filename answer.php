@@ -58,7 +58,7 @@
         </div>
         <br>
         <div class="tempurature">
-          <img src="images/temperature.png" alt="tempurature">
+          <img class="Calculate" src="images/movie_ratings.jpg" alt="Movie ">
         </div>
       </main>
     </div>
